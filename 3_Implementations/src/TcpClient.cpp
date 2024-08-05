@@ -4,20 +4,35 @@ namespace valeo
 {
   namespace internship
   {
-    TcpClient::TcpClient(std::string p_ip, int p_port)
+    TcpClient::TcpClient(std::string p_ip, int p_port):
+    m_ip(p_ip), m_port(p_port), m_socket(-1)
     {
 
     }
     TcpClient::~TcpClient()
     {
     }
+    std::string TcpClient::getIp()
+    {
+        return std::string();
+    }
+    int TcpClient::getPort()
+    {
+        return 0;
+    }
+    void TcpClient::setIp(std::string p_ip)
+    {
+    }
+    void TcpClient::setPort(int p_port)
+    {
+    }
     bool TcpClient::start()
     {
       return false;
     }
-    bool TcpClient::stop()
+    void TcpClient::stop()
     {
-        return false;
+      m_socket = -1;
     }
   }
 }
