@@ -6,7 +6,7 @@ using namespace std;
 int main(int argc, char* argv[])
 {
   void* l_metadata = malloc(sizeof(metadata_t));
-  valeo::internship::AnnotationFileReader l_reader("../data/annotation.txt", l_metadata);
+  workspace::internship::AnnotationFileReader l_reader("../data/annotation.txt", l_metadata);
   if(l_reader.open())
   {
     cout << "Sucess to open file " << endl;

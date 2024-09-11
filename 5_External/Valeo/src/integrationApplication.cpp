@@ -14,7 +14,7 @@ using namespace std;
 
 void start_server(std::string p_ip, int p_port, std::string p_filename)
 {
-  valeo::internship::DataTransmetter l_server(p_ip, p_port);
+  workspace::internship::DataTransmetter l_server(p_ip, p_port);
   l_server.setInputFileName(p_filename);
   if(l_server.getIp()!="123.4.5.6")
   {
@@ -43,7 +43,7 @@ void start_server(std::string p_ip, int p_port, std::string p_filename)
 
 void start_client(std::string p_ip, int p_port, std::string p_filename)
 {
-  valeo::internship::DataReceiver l_client(p_ip, p_port);
+  workspace::internship::DataReceiver l_client(p_ip, p_port);
   l_client.setOutputFilename(p_filename);
   if(l_client.getIp()!="123.4.5.6")
   {
@@ -78,7 +78,7 @@ int main(int argc, char* argv[])
 {
   cout << "[Info] Application to test if all the requirement is satisfy." << endl;
   void* l_metadata = malloc(sizeof(metadata_t));
-  valeo::internship::AnnotationFileReader l_reader("../data/annotation.txt", l_metadata);
+  workspace::internship::AnnotationFileReader l_reader("../data/annotation.txt", l_metadata);
   thread svrThd(start_server, "127.0.0.1", 12345,"../data/annotation.txt");
   usleep(1000); // wait a while to let the server start before to start client
   thread cltThd(start_client, "123.4.5.6", 12300, "../data/bb_annotation.txt");
