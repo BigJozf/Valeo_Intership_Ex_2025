@@ -1,6 +1,6 @@
 #include "TcpClient.hpp"
 
-namespace valeo
+namespace workspace
 {
   namespace internship
   {

@@ -3,7 +3,7 @@
 #include <fstream>
 #include "DataTypes.hpp"
 #include "ItfAnnotationFileReader.hpp"
-namespace valeo
+namespace workspace
 {
   namespace internship
   {

@@ -1,6 +1,6 @@
 #include "DataReceiver.hpp"
 #include <string>
-namespace valeo
+namespace workspace
 {
   namespace internship
   {

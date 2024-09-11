@@ -1,7 +1,7 @@
 #ifndef TcpClient_hpp
 #define TcpClient_hpp
 #include <string>
-namespace valeo{
+namespace workspace{
   namespace internship
   {
     class TcpClient

@@ -1,7 +1,7 @@
 #ifndef ItfAnnotationFileReader_hpp
 #define ItfAnnotationFileReader_hpp
 #include <string>
-namespace valeo
+namespace workspace
 {
   namespace internship
   {

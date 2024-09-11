@@ -26,7 +26,7 @@ list(APPEND LIBS Threads::Threads)
 message("BT = " ${CMAKE_BUILD_TYPE})
 
 if(${CMAKE_BUILD_TYPE} STREQUAL DEBUG)
-  list(APPEND LIBS valeo_utility)
+  list(APPEND LIBS workspace_utility)
 endif()
 
 target_link_libraries(
