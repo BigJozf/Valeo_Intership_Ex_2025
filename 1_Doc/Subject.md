@@ -85,17 +85,17 @@ We propose you to implements the following program:
 ## First option
 
   Modify the file prog1.cpp (in 4_Sample/Intership/src/) to implemente the following requirements
-  Generation an ouput file containing the bounding box for all the read points from the annotation file
+  Generation of an ouput file containing the bounding box for all the read points from the annotation file
   The bounding box should be a square 20 pix by 20 pix.
-  When excuting the program in delivery/bin an output file should be saved in with the following folder delivery/data and named bb_annotation.txt
-  For the Annotation file reader create a class named AnnotationFileReader eriting from ItfAnnotationFileReader
+  When excuting the program in delivery/bin an output file should be saved in the following folder delivery/data and named bb_annotation.txt
+  For the Annotation file reader create a class named AnnotationFileReader heriting from ItfAnnotationFileReader
 
 ## Second option
 
   Modify the file prog1.cpp (in 4_Sample/Intership/src/) to implemente the following requirements
   Same as the previous one but the annotation file is read by DataTransmetter, then send to the DataReiver
   You will have to generate an oupput file wish contain the boudinding box.
-  When excuting the program in delivery/bin an output file should be saved in with the following folder delivery/data and named bb_annotation.txt
+  When excuting the program in delivery/bin an output file should be saved in the following folder delivery/data and named bb_annotation.txt
 
 ## Third option
 
@@ -107,7 +107,7 @@ We propose you to implements the following program:
 - you have to print all the received points thanks to OpenCV and to record it in an mp4 file
 - if a parameter is given when  launching the program you will have to print the point and the bounding box (the previous draw have to be cleared)
 
-  When excuting the program in delivery/bin an output file should be saved in with the following folder delivery/data and named bb_annotation.txt
+  When excuting the program in delivery/bin an output file should be saved in the following folder delivery/data and named bb_annotation.txt
 
 ## Fourth option
 
@@ -115,7 +115,7 @@ We propose you to implements the following program:
 
   <b>For this part make sure OpenCV is installed on your laptop.</b>
 
-  When excuting the program in delivery/bin an output file should be saved in with the following folder delivery/data and named bb_annotation.txt
+  When excuting the program in delivery/bin an output file should be saved in the following folder delivery/data and named bb_annotation.txt
 
 - Same as the previous one but you have to plot the bounding box
 - You will have two print mode (keep or clean)
