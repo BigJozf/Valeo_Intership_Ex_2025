@@ -17,6 +17,11 @@ link_directories(
 )
 
 add_executable(
+  testAnnotation
+  src/testAnnotation.cpp
+)
+
+add_executable(
   integrationApplication
   src/integrationApplication.cpp
 )
@@ -32,6 +37,11 @@ endif()
 target_link_libraries(
   integrationApplication
   ${LIBS}
+)
+
+target_link_libraries(
+  testAnnotation
+  AnnotationReader
 )
 
 function(do_test testName target)
